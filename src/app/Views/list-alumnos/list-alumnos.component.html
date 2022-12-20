@@ -1,0 +1,12 @@
+<div class="container">
+    <ul>
+        <li class="t-2" *ngFor="let alumno of listAlumno"> <!--(click)="selectAlumno(alumno)"-->
+            <button class="btn btn-primary t-2" routerLink]="['/detailAlumno', alumno.id]" >{{alumno.nombre}}</button>
+        </li>
+    </ul>
+</div>
+<div class="container border">
+
+</div>
+
+<button class="btn btn-primary" routerLink="/addAlumno">Crear alumno</button>
